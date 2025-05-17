@@ -1,0 +1,99 @@
+    <div
+      class="w-full h-[80vh] bg-transparent mb-4 flex justify-around items-center"
+    >
+      <!-- Text Section   -->
+      <div
+        class="w-[65%] h-[75vh] bg-transparent flex flex-col justify-start items-start p-2"
+      >
+        <!-- Fun Fact -->
+        <div
+          class="text-[1.35rem] font-semibold mb-2 text-green-800 text-justify"
+          style="font-family: Poppins, sans-serif"
+        >
+          I was also born on July 7th—7/7—giving me a connection to lucky number
+          7 and World Chocolate Day! My birthday is literally the sweetest day
+          of the year.
+        </div>
+        <!-- Bio -->
+        <div class="text-[1.025rem] mb-2 text-justify">
+          I’m a curious full-stack developer and BCIS student with a cosmic love
+          for both code and the stars. Whether I’m building AI-powered
+          platforms, exploring mental health tech, or diving into data-driven
+          projects, I bring a unique blend of logic, creativity, and intuition.
+          I believe in writing clean code, making meaningful impact, and
+          occasionally blaming Mercury retrograde when my APIs act up.
+        </div>
+        <!-- Tech Interest & Learning Goals-->
+        <div
+          class="h-[60vh] bg-transparent w-full flex justify-around items-center mt-4"
+        >
+          <!-- Tech Interest   -->
+          <div class="w-[40%] h-[50vh] flex-col justify-start items-center">
+            <div class="text-[2.25rem] font-bold mb-2 text-center">
+              Tech Interest ⚙️
+            </div>
+            <div class="flex-col justify-evenly items-start">
+              <div class="text-[1rem] font-semibold text-justify mb-2">
+                . Passionate about Full-Stack Development using the MERN stack
+              </div>
+              <div class="text-[1rem] font-semibold text-justify mb-2">
+                . Deeply curious about AI/ML integrations in web and mobile
+                applications
+              </div>
+              <div class="text-[1rem] font-semibold text-justify mb-2">
+                . Deeply passionate about Large Language Models (LLMs) currently
+                learning to build them from scratch
+              </div>
+              <div class="text-[1rem] font-semibold text-justify mb-1">
+                . Enjoy building mobile applications experienced with both React
+                Native and Flutter
+              </div>
+            </div>
+          </div>
+          <!-- Learning Goals -->
+          <div class="w-[40%] h-[50vh] flex-col justify-start items-center">
+            <div class="text-[2rem] font-bold mb-2 text-center">
+              Learning Goals 🎯
+            </div>
+            <div class="flex-col justify-evenly items-start">
+              <div class="text-[1rem] font-semibold text-justify mb-2">
+                . Gaining hands-on MERN stack experience through part-time
+                developer work.
+              </div>
+              <div class="text-[1rem] font-semibold text-justify mb-2">
+                . Learning key LLM concepts via Sebastian Raschka’s “Build LLM
+                from Scratch”
+              </div>
+              <div class="text-[1rem] font-semibold text-justify mb-2">
+                . Strengthening Flutter skills with coursework and portfolio
+                projects
+              </div>
+              <div class="text-[1rem] font-semibold text-justify mb-1">
+                . Comparing Flutter and React Native for cross-platform mobile
+                development
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Image Section -->
+      <div
+        class="w-[25%] h-[60vh] rounded-md shadow-md flex-col justify-start items-center bg-transparent"
+      >
+        <div
+          class="w-full h-[50vh] mb-4"
+          style="
+            background-image: url('/assets/shubham.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        ></div>
+        <div
+          class="text-[1.5rem] font-semibold text-center text-green-800"
+          style="font-family: Poppins, sans-serif"
+        >
+          Shubham Kadariya
+        </div>
+      </div>
+    </div>
