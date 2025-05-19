@@ -22,28 +22,28 @@
   </head>
   <body class="min-h-screen overflow-x-hidden">
     <!-- Navigation Portion -->
-    <nav>
+    <nav class="sticky top-0 z-[50] bg-white">
       <div
-        class="w-full h-[20vh] shadow-sm bg-transparent flex flex-row justify-around items-center mb-[1rem]"
+        class="w-full h-[12vh] shadow-sm bg-transparent flex flex-row px-[22vh] justify-between items-center mb-[1rem]"
       >
         <!-- Team Logo -->
         <div
-          class="w-[22%] h-[18vh] bg-transparent mr-[7rem]"
+          class="w-[28vh] h-[8vh] bg-transparent hover:cursor-pointer"
           style="
             background-image: url('/assets/logo.png');
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain; /*if the image size is not same as container and bg size is set as cover then it results in pixelation so using bg size as contain here to avoid the issue*/
           "
         ></div>
         <!-- Lsp Logo -->
         <div
-          class="w-[19%] h-[12vh] bg-transparent mr-[1rem] hover:cursor-pointer"
+          class="w-[28vh] h-[8vh] bg-transparent hover:cursor-pointer"
           style="
             background-image: url('/assets/lspLogo.png');
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
           "
           onclick="window.location.href='https://studentpartner.lftechnology.com'"
         ></div>
@@ -463,21 +463,21 @@
     <!-- The Footer Section -->
     <footer>
       <div
-        class="w-full h-[10vh] bg-neutral-400/30 shadow-sm flex justify-around items-center"
+        class="w-full h-[18vh] bg-[#222b29] shadow-sm flex px-[22vh] justify-between items-center"
       >
         <div
-          class="text-sm font-bold text-green-800"
+          class="text-m text-[#a6b2af] leading-none"
           style="font-family: 'Geist', sans-serif"
         >
-          © 2025 Team FutureFrogs. All rights reserved.
+          © LSPP 2025 Team Future Frogs. All rights reserved.
         </div>
         <div
-          class="w-[12%] h-[8vh]"
+          class="w-[18vh] h-[6vh]"
           style="
-            background-image: url('assets/logo.png');
+            background-image: url('assets/wordmark-white.png');
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
           "
         ></div>
       </div>
