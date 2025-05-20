@@ -20,9 +20,9 @@
     />
     <title>LSP Future Frogs</title>
   </head>
-  <body class="min-h-screen overflow-x-hidden">
+  <body class="min-h-screen overflow-x-hidden overflow-y-auto">
     <!-- Navigation Portion -->
-    <nav class="sticky top-0 z-[50] bg-white">
+    <nav class="sticky top-0 z-[50] bg-transparent backdrop-blur-md">
       <div
         class="w-full h-[12vh] shadow-sm bg-transparent flex flex-row px-[22vh] justify-between items-center mb-[1rem]"
       >
@@ -218,19 +218,19 @@
       </div>
       <!-- The Basic Card To Display The Info-->
       <div
-        class="w-full h-[145vh] bg-transparent flex flex-col justify-start items-center"
+        class="w-full bg-transparent flex flex-col justify-start items-center"
       >
         <!-- First Three Cards -->
         <div
-          class="w-[75%] h-[70vh] mt-4 mb-2 flex flex-wrap justify-evenly items-start bg-transparent"
+          class="w-[75%] mt-4 mb-2 flex flex-wrap justify-evenly items-start bg-transparent"
         >
           <!-- Anurag Card -->
           <div
-            class="w-[30%] h-[58vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+            class="w-[30%] h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
           >
             <!-- Picture Display -->
             <div
-              class="w-[60%] h-[30vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105"
+              class="w-[52%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
               style="
                 background-image: url('/assets/anurag.png');
                 background-position: center;
@@ -238,21 +238,14 @@
                 background-size: cover;
               "
             ></div>
-            <!-- Name and LinkedIn -->
-            <div class="flex justify-center items-center p-2 w-full">
-              <div
-                class="text-xl font-bold text-green-800/80 mr-4"
-                style="font-family: 'Geist', sans-serif"
-              >
-                Anurag Adhikari
-              </div>
-              <div
-                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white"
-              >
-                <i class="fa-brands fa-linkedin-in text-xl"></i>
-              </div>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Anurag Adhikari
             </div>
-            <!-- Fun fact -->
+            <!-- Paragraph -->
             <div
               class="text-sm p-4 text-justify"
               style="font-family: 'Giest', sans-serif"
@@ -261,14 +254,24 @@
               number 7 and World Chocolate Day! My birthday is literally the
               sweetest day of the year."
             </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <div
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </div>
+            </div>
           </div>
           <!-- PrashunB Card -->
           <div
-            class="w-[30%] h-[58vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+            class="w-[30%] h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
           >
             <!-- Picture Display -->
             <div
-              class="w-[60%] h-[30vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105"
+              class="w-[52%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
               style="
                 background-image: url('/assets/prashunB.png');
                 background-position: center;
@@ -276,21 +279,14 @@
                 background-size: cover;
               "
             ></div>
-            <!-- Name and LinkedIn -->
-            <div class="flex justify-center items-center p-2 w-full">
-              <div
-                class="text-xl font-bold text-green-800/80 mr-4"
-                style="font-family: 'Geist', sans-serif"
-              >
-                Prashun Baral
-              </div>
-              <div
-                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white"
-              >
-                <i class="fa-brands fa-linkedin-in text-xl"></i>
-              </div>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Prashun Baral
             </div>
-            <!-- Fun fact -->
+            <!-- Paragraph -->
             <div
               class="text-sm p-4 text-justify"
               style="font-family: 'Giest', sans-serif"
@@ -299,14 +295,24 @@
               number 7 and World Chocolate Day! My birthday is literally the
               sweetest day of the year."
             </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <div
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </div>
+            </div>
           </div>
           <!-- PrashunP Card -->
           <div
-            class="w-[30%] h-[58vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+            class="w-[30%] h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
           >
             <!-- Picture Display -->
             <div
-              class="w-[60%] h-[30vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105"
+              class="w-[52%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
               style="
                 background-image: url('/assets/prashunP.png');
                 background-position: center;
@@ -314,21 +320,14 @@
                 background-size: cover;
               "
             ></div>
-            <!-- Name and LinkedIn -->
-            <div class="flex justify-center items-center p-2 w-full">
-              <div
-                class="text-xl font-bold text-green-800/80 mr-4"
-                style="font-family: 'Geist', sans-serif"
-              >
-                Prashun Paudel
-              </div>
-              <div
-                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white"
-              >
-                <i class="fa-brands fa-linkedin-in text-xl"></i>
-              </div>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Prashun Paudel
             </div>
-            <!-- Fun fact -->
+            <!-- Paragraph -->
             <div
               class="text-sm p-4 text-justify"
               style="font-family: 'Giest', sans-serif"
@@ -337,19 +336,29 @@
               number 7 and World Chocolate Day! My birthday is literally the
               sweetest day of the year."
             </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <div
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </div>
+            </div>
           </div>
         </div>
         <!-- Second Three Cards -->
         <div
-          class="w-[75%] h-[60vh] mt-2 mb-2 flex flex-wrap justify-evenly items-start"
+          class="w-[75%] mt-2 mb-[2rem] flex flex-wrap justify-evenly items-start"
         >
           <!-- Samriddhi Card -->
           <div
-            class="w-[30%] h-[58vh] mb-4 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+            class="w-[30%] h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
           >
             <!-- Picture Display -->
             <div
-              class="w-[60%] h-[30vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105"
+              class="w-[52%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
               style="
                 background-image: url('/assets/samriddhi.png');
                 background-position: center;
@@ -357,21 +366,14 @@
                 background-size: cover;
               "
             ></div>
-            <!-- Name and LinkedIn -->
-            <div class="flex justify-center items-center p-2 w-full">
-              <div
-                class="text-xl font-bold text-green-800/80 mr-4"
-                style="font-family: 'Geist', sans-serif"
-              >
-                Samriddhi Maharjan
-              </div>
-              <div
-                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white"
-              >
-                <i class="fa-brands fa-linkedin-in text-xl"></i>
-              </div>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Samriddhi Maharjan
             </div>
-            <!-- Fun fact -->
+            <!-- Paragraph -->
             <div
               class="text-sm p-4 text-justify"
               style="font-family: 'Giest', sans-serif"
@@ -380,14 +382,24 @@
               number 7 and World Chocolate Day! My birthday is literally the
               sweetest day of the year."
             </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <div
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </div>
+            </div>
           </div>
           <!-- Shashi Card -->
           <div
-            class="w-[30%] h-[58vh] mb-4 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+            class="w-[30%] h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
           >
             <!-- Picture Display -->
             <div
-              class="w-[60%] h-[30vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105"
+              class="w-[52%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
               style="
                 background-image: url('/assets/shashi.png');
                 background-position: center;
@@ -395,21 +407,14 @@
                 background-size: cover;
               "
             ></div>
-            <!-- Name and LinkedIn -->
-            <div class="flex justify-center items-center p-2 w-full">
-              <div
-                class="text-xl font-bold text-green-800/80 mr-4"
-                style="font-family: 'Geist', sans-serif"
-              >
-                Shashi Baranwal
-              </div>
-              <div
-                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white"
-              >
-                <i class="fa-brands fa-linkedin-in text-xl"></i>
-              </div>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Shashi Baranwal
             </div>
-            <!-- Fun fact -->
+            <!-- Paragraph -->
             <div
               class="text-sm p-4 text-justify"
               style="font-family: 'Giest', sans-serif"
@@ -418,14 +423,24 @@
               number 7 and World Chocolate Day! My birthday is literally the
               sweetest day of the year."
             </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <div
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </div>
+            </div>
           </div>
           <!-- Shubham Card -->
           <div
-            class="w-[30%] h-[58vh] mb-4 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+            class="w-[30%] h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
           >
             <!-- Picture Display -->
             <div
-              class="w-[60%] h-[30vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105"
+              class="w-[52%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
               style="
                 background-image: url('/assets/shubham.png');
                 background-position: center;
@@ -433,21 +448,14 @@
                 background-size: cover;
               "
             ></div>
-            <!-- Name and LinkedIn -->
-            <div class="flex justify-center items-center p-2 w-full">
-              <div
-                class="text-xl font-bold text-green-800/80 mr-4"
-                style="font-family: 'Geist', sans-serif"
-              >
-                Shubham Kadariya
-              </div>
-              <div
-                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white"
-              >
-                <i class="fa-brands fa-linkedin-in text-xl"></i>
-              </div>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Shubham Kadariya
             </div>
-            <!-- Fun fact -->
+            <!-- Paragraph -->
             <div
               class="text-sm p-4 text-justify"
               style="font-family: 'Giest', sans-serif"
@@ -455,6 +463,16 @@
               "I was also born on July 7th—7/7—giving me a connection to lucky
               number 7 and World Chocolate Day! My birthday is literally the
               sweetest day of the year."
+            </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <div
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </div>
             </div>
           </div>
         </div>
