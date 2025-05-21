@@ -20,17 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-        .wrapper{
-            max-width: 1200px;
-            margin: auto;
-        }
-    </style>
   </head>
   <body class="min-h-screen overflow-x-hidden overflow-y-auto w-full">
     <!-- NavBar -->
-    <nav class=" sticky top-0 z-[50] bg-transparent backdrop-blur-md w-full">
+    <nav class="sticky top-0 z-[50] bg-transparent backdrop-blur-md w-full">
       <div
         class="w-full h-[24vh] lg:h-[12vh] shadow-sm bg-transparent flex flex-col justify-start items-center lg:flex-row lg:px-[22vh] lg:justify-between lg:items-center mb-[1rem]"
       >
@@ -58,32 +51,38 @@
       </div>
     </nav>
     <!-- Hero Banner -->
-    <div class="wrapper w-full bg-transparent flex flex-col justify-start items-center">
+    <div
+      class="w-full bg-transparent flex flex-col justify-start items-center px-4 lg:px-[22vh]"
+    >
       <!-- Navigation Back -->
-      <a
-        href="/"
-        class="noopener noreferrer w-full flex justify-start items-center p-4 transition-all ease-in-out duration-150 mb-2"
+      <div
+        class="w-full flex justify-center lg:justify-start items-center lg:px-10"
       >
-        <div
-          class="text-m text-gray-800 font-semibold mr-4"
-          style="font-family: 'Geist', sans-serif"
+        <a
+          href="/"
+          class="noopener noreferrer w-[95%] lg:w-[16%] flex justify-start items-center p-4 transition-all ease-in-out duration-150 mb-2 rounded-sm bg-green-800 p-2 transition-all ease-in-out duration-150 hover:bg-green-600 hover:scale-105"
         >
-        
-        </div>
-        <div
-          class="text-m text-gray-800 font-semibold mr-2 hover:underline"
-          style="font-family: 'Geist', sans-serif"
-        >
-          Back to Team
-        </div>
-      </a>
+          <div
+            class="text-m text-gray-800 font-semibold mr-4 text-white"
+            style="font-family: 'Geist', sans-serif"
+          >
+            <-
+          </div>
+          <div
+            class="text-m text-gray-800 font-semibold mr-2 hover:underline text-white"
+            style="font-family: 'Geist', sans-serif"
+          >
+            Back to Team
+          </div>
+        </a>
+      </div>
       <!-- Profile Pic And Description -->
       <div
         class="flex flex-col justify-start items-center lg:flex-row lg:justify-start lg:items-center lg:w-full"
       >
         <!-- Profile Pic -->
         <div
-          class="w-[90%] lg:w-[25%] h-[50vh] bg-transparent rounded-sm border-2 border-gray-200 mt-2 lg:mb-4 lg:ml-4 grayscale hover:cursor-pointer hover:grayscale-0"
+          class="w-[90%] lg:w-[25%] h-[50vh] bg-transparent rounded-sm mt-2 lg:mb-4 lg:ml-4 grayscale hover:cursor-pointer hover:grayscale-0"
           style="
             background-image: url('/assets/shashi.png');
             background-size: cover;
@@ -132,14 +131,19 @@
             class="mb-2 text-justify text-sm lg:text-m w-[95%] lg:w-[80%] p-2 mt-4"
             style="font-family: 'Geist', sans-serif"
           >
-            I am a tech-savvy, community-driven, caffeine-fueled doer who doesn’t just attend events, I help run them, speak at them, and win them. I’m always pushing myself to learn and help others grow alongside me. I’m a firm believer in the power of collaboration and knowledge sharing, and I’m always looking for ways to give back to the community that has given me so much.
+            I am a tech-savvy, community-driven, caffeine-fueled doer who
+            doesn’t just attend events, I help run them, speak at them, and win
+            them. I’m always pushing myself to learn and help others grow
+            alongside me. I’m a firm believer in the power of collaboration and
+            knowledge sharing, and I’m always looking for ways to give back to
+            the community that has given me so much.
           </div>
         </div>
       </div>
     </div>
     <!-- About Me And Fun Facts -->
     <div
-      class="wrapper w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around lg:items-center mt-4 mb-4"
+      class="w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around lg:items-center mt-4 mb-4 px-4 lg:px-[22vh]"
     >
       <!-- About Me Card -->
       <div
@@ -157,10 +161,14 @@
           class="p-2 text-sm lg:text-m text-gray-800 p-2 text-justify w-[95%] mb-2 lg:mb-4"
           style="font-family: 'Geist', sans-serif"
         >
-          I'm Shashi Baranwal, a B.Sc. CSIT student at National Infotech college in Birgunj, I am passionate about technology, innovation, and community engagement. Throughout my academic journey, I have actively participated in hackathons, have taken initiative in organizing and conducting technical workshops, including sessions on Git and GitHub.
-        <br>
-        <br>
-          I juggle tech, design, leadership, and collaboration like a pro—and still manage to crack jokes, chase free swag, and be the friendly face in every meetup room.
+          I'm Shashi Baranwal, a B.Sc. CSIT student at National Infotech college
+          in Birgunj, I am passionate about technology, innovation, and
+          community engagement. Throughout my academic journey, I have actively
+          participated in hackathons, have taken initiative in organizing and
+          conducting technical workshops, including sessions on Git and GitHub.
+          I juggle tech, design, leadership, and collaboration like a pro—and
+          still manage to crack jokes, chase free swag, and be the friendly face
+          in every meetup room.
         </div>
         <!-- Recent Projects -->
         <div class="w-[95%] flex flex-col justify-start items-start mb-4">
@@ -226,14 +234,15 @@
           class="w-[95%] lg:w-[85%] h-[10vh] p-1 flex justify-center items-center bg-yellow-200/20 mt-4 mb-4 rounded-sm"
         >
           <div class="text-sm font-semibold text-justify w-[95%]">
-            🧑🏻‍💻 I once had a blogging website where I used to write blogs on recent tech updates.
+            🧑🏻‍💻 I once had a blogging website where I used to write blogs on
+            recent tech updates.
           </div>
         </div>
       </div>
     </div>
     <!-- Key Learnings And Tech Interest -->
     <div
-      class="wrapper w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around lg:items-center mt-4 mb-4"
+      class="wrapper w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around lg:items-center mt-4 mb-4 px-4 lg:px-[22vh]"
     >
       <!-- Key Learnings Card -->
       <div
@@ -258,7 +267,8 @@
           class="mt-2 mb-2 text-sm w-[95%] p-2 text-justify ml-2 lg:ml-6"
           style="font-family: 'Geist', sans-serif"
         >
-          2️⃣ Gained experience in organizing and conducting workshops, enhancing my leadership and communication skills.
+          2️⃣ Gained experience in organizing and conducting workshops, enhancing
+          my leadership and communication skills.
         </div>
         <!-- Key Learning-3 -->
         <div
