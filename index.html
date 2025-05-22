@@ -1,390 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.png" />
+    <!-- Using Tailwind CSS Playful CDN For Styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Using The Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Google Fonts For Geist Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>LSP Future Frogs</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/assets/favicon.png" />
-  <!-- Using Tailwind CSS Playful CDN For Styling -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- Using The Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-  <!-- Google Fonts For Geist Serif -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <title>LSP Future Frogs</title>
-</head>
-
-<body class="min-h-screen overflow-x-hidden overflow-y-auto">
-  <!-- Navigation Portion -->
-  <nav class="sticky top-0 z-[50] bg-transparent backdrop-blur-md w-full">
-    <div
-      class="w-full h-auto lg:h-[12vh] shadow-sm bg-transparent flex flex-row justify-between items-center px-4 lg:px-[22vh] mb-[1rem] py-4">
-      <!-- Team Logo -->
+  <body class="min-h-screen overflow-x-hidden overflow-y-auto">
+    <!-- Navigation Portion -->
+    <nav class="sticky top-0 z-[50] bg-transparent backdrop-blur-md w-full">
       <div
-        class="w-[35%] h-[6vh] sm:w-[30%] sm:h-[7vh] md:w-[26%] md:h-[8vh] lg:w-[28vh] lg:h-[8vh] bg-transparent hover:cursor-pointer"
-        style="
+        class="w-full h-auto lg:h-[12vh] shadow-sm bg-transparent flex flex-row justify-between items-center px-4 lg:px-[22vh] mb-[1rem] py-4"
+      >
+        <!-- Team Logo -->
+        <div
+          class="w-[35%] h-[6vh] sm:w-[30%] sm:h-[7vh] md:w-[26%] md:h-[8vh] lg:w-[28vh] lg:h-[8vh] bg-transparent hover:cursor-pointer"
+          style="
             background-image: url('/assets/logo.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-          "></div>
-      <!-- Lsp Logo -->
-      <div
-        class="w-[35%] h-[6vh] sm:w-[30%] sm:h-[7vh] md:w-[26%] md:h-[8vh] lg:w-[28vh] lg:h-[8vh] bg-transparent hover:cursor-pointer"
-        style="
+          "
+        ></div>
+        <!-- Lsp Logo -->
+        <div
+          class="w-[35%] h-[6vh] sm:w-[30%] sm:h-[7vh] md:w-[26%] md:h-[8vh] lg:w-[28vh] lg:h-[8vh] bg-transparent hover:cursor-pointer"
+          style="
             background-image: url('/assets/lspLogo.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-          " onclick="window.location.href='https://studentpartner.lftechnology.com'"></div>
-    </div>
-  </nav>
-  <!-- The main section of the entire webpage -->
-  <main>
-    <!-- The Hero Banner -->
-    <div
-      class="w-[95%] lg:w-full h-[160vh] lg:h-[75vh] bg-transparent mb-[0.25rem] flex flex-col justify-start items-center lg:flex-row lg:justify-around lg:items-center">
-      <!-- The Hero Text -->
-      <div class="flex flex-col justify-start items-start w-[95%] lg:w-[35%]">
-        <div class="text-[3.75rem] font-bold mb-4 text-green-800/85" style="font-family: 'Giest', sans-serif">
-          Future Frogs
-        </div>
-        <!-- Point-1 -->
-        <div class="flex-col justify-evenly items-center mb-2" style="font-family: 'Giest', sans-serif">
+          "
+          onclick="window.location.href='https://studentpartner.lftechnology.com'"
+        ></div>
+      </div>
+    </nav>
+    <!-- The main section of the entire webpage -->
+    <main>
+      <!-- The Hero Banner -->
+      <div
+        class="w-[95%] lg:w-full h-[160vh] lg:h-[75vh] bg-transparent mb-[0.25rem] flex flex-col justify-start items-center lg:flex-row lg:justify-around lg:items-center"
+      >
+        <!-- The Hero Text -->
+        <div class="flex flex-col justify-start items-start w-[95%] lg:w-[35%]">
+          <div
+            class="text-[3.75rem] font-bold mb-4 text-green-800/85"
+            style="font-family: 'Giest', sans-serif"
+          >
+            Future Frogs
+          </div>
           <!-- Point-1 -->
-          <div class="mb-2 flex-col justify-center items-center">
-            <div class="text-xl font-semibold">Team FutureFrogs 🐸</div>
-            <div class="text-md">
-              A bold and vibrant crew from the Leapfrog Student Partnership
-              2025.
+          <div
+            class="flex-col justify-evenly items-center mb-2"
+            style="font-family: 'Giest', sans-serif"
+          >
+            <!-- Point-1 -->
+            <div class="mb-2 flex-col justify-center items-center">
+              <div class="text-xl font-semibold">Team FutureFrogs 🐸</div>
+              <div class="text-md">
+                A bold and vibrant crew from the Leapfrog Student Partnership
+                2025.
+              </div>
+            </div>
+          </div>
+          <!-- Point-2 -->
+          <div
+            class="flex-col justify-evenly items-center mb-2"
+            style="font-family: 'Giest', sans-serif"
+          >
+            <div class="mb-2 flex-col justify-center items-center">
+              <div class="text-xl font-semibold">Diverse Perspectives 🌍</div>
+              <div class="text-md">
+                Each member brings a unique lens, sparking fresh ideas and
+                deeper insights.
+              </div>
+            </div>
+          </div>
+          <!-- Point-3 -->
+          <div
+            class="flex-col justify-evenly items-center mb-2"
+            style="font-family: 'Giest', sans-serif"
+          >
+            <div class="mb-2 flex-col justify-center items-center">
+              <div class="text-xl font-semibold">Shared Passion ❤️</div>
+              <div class="text-md">
+                United by our love for tech, innovation, and meaningful
+                collaboration.
+              </div>
+            </div>
+          </div>
+          <!-- Point-4 -->
+          <div
+            class="flex-col justify-evenly items-center mb-2"
+            style="font-family: 'Giest', sans-serif"
+          >
+            <div class="mb-2 flex-col justify-center items-center">
+              <div class="text-xl font-semibold">Driven by Curiosity 🔍</div>
+              <div class="text-md">
+                We explore, question, and challenge the status quo to keep
+                growing.
+              </div>
             </div>
           </div>
         </div>
-        <!-- Point-2 -->
-        <div class="flex-col justify-evenly items-center mb-2" style="font-family: 'Giest', sans-serif">
-          <div class="mb-2 flex-col justify-center items-center">
-            <div class="text-xl font-semibold">Diverse Perspectives 🌍</div>
-            <div class="text-md">
-              Each member brings a unique lens, sparking fresh ideas and
-              deeper insights.
-            </div>
-          </div>
-        </div>
-        <!-- Point-3 -->
-        <div class="flex-col justify-evenly items-center mb-2" style="font-family: 'Giest', sans-serif">
-          <div class="mb-2 flex-col justify-center items-center">
-            <div class="text-xl font-semibold">Shared Passion ❤️</div>
-            <div class="text-md">
-              United by our love for tech, innovation, and meaningful
-              collaboration.
-            </div>
-          </div>
-        </div>
-        <!-- Point-4 -->
-        <div class="flex-col justify-evenly items-center mb-2" style="font-family: 'Giest', sans-serif">
-          <div class="mb-2 flex-col justify-center items-center">
-            <div class="text-xl font-semibold">Driven by Curiosity 🔍</div>
-            <div class="text-md">
-              We explore, question, and challenge the status quo to keep
-              growing.
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- The Hero Picture -->
-      <div
-        class="w-[98%] ml-4 lg:ml-0 lg:w-[30%] h-[70vh] rounded-sm shadow-md flex flex-col justify-center items-center border-2 border-gray-200 overflow-x-hidden">
-        <!-- Creating Collage, Can Be Component In React and Mapping It! -->
+        <!-- The Hero Picture -->
         <div
-          class="w-[90%] lg:w-[85%] h-[48vh] bg-transparent mb-[1rem] flex flex-row flex-wrap justify-evenly items-start mb-2 border-1 border-gray-200 shadow-sm rounded-sm">
-          <!-- Photos of team members -->
-          <!-- Anurag -->
+          class="w-[98%] ml-4 lg:ml-0 lg:w-[30%] h-[70vh] rounded-sm shadow-md flex flex-col justify-center items-center border-2 border-gray-200 overflow-x-hidden"
+        >
+          <!-- Creating Collage, Can Be Component In React and Mapping It! -->
           <div
-            class="w-[33%] h-[24vh] mb-2 grayscale opacity-95 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
-            title="Anurag Adhikari" style="
-                background-image: url('/assets/anurag.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-              "></div>
-          <!-- PrasunB -->
-          <div
-            class="w-[33%] h-[24vh] grayscale opacity-95 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
-            title="Prashun Baral" style="
-                background-image: url('/assets/prashunB.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-              "></div>
-          <!-- PrasunP -->
-          <div
-            class="w-[33%] h-[24vh] grayscale opacity-98 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
-            title="Prasun Paudel" style="
-                background-image: url('/assets/prashunP.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-              "></div>
-          <!-- Samriddhi -->
-          <div
-            class="w-[33%] h-[24vh] grayscale opacity-98 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
-            title="Samriddhi Maharjan" style="
-                background-image: url('/assets/samriddhi.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-              "></div>
-          <!-- Shashi -->
-          <div
-            class="w-[33%] h-[24vh] grayscale opacity-98 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
-            title="Shashi Branuwal" style="
-                background-image: url('/assets/shashi.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-              "></div>
-          <!-- Shubham -->
-          <div
-            class="w-[33%] h-[24vh] grayscale opacity-98 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
-            title="Shubham Kadariya" style="
-                background-image: url('/assets/shubham.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-              "></div>
-        </div>
-        <!-- Tagline For The Collage -->
-        <div class="font-bold text-[1.55rem] w-full text-center text-green-800 mt-[1.25rem]"
-          style="font-weight: 'Geist', sans-serif">
-          #FutureFrogs🐸
-        </div>
-      </div>
-    </div>
-    <!-- The Tagline -->
-    <div class="bg-neutral-400/20 flex flex-col justify-center items-center w-full h-[25vh] shadow-sm">
-      <div class="mb-[1rem] font-bold text-4xl text-green-800" style="font-family: 'Geist', sans-serif">
-        Meet Your Frogs
-      </div>
-      <div class="font-semibold text-lg text-center">
-        Team FutureFrogs where Leapfrog 2025 talents leap forward together.
-      </div>
-    </div>
-    <!-- The Basic Card To Display The Info-->
-    <div class="w-full bg-transparent flex flex-col justify-start items-center">
-      <!-- First Three Cards -->
-      <div
-        class="w-[95%] lg:w-[75%] mt-4 mb-2 flex flex-col justify-start items-center lg:flex-row lg:flex-wrap lg:justify-evenly lg:items-start bg-transparent">
-        <!-- Anurag Card -->
-        <div
-          class="w-[95%] lg:w-[30%] h-[62vh] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer">
-          <!-- Picture Display -->
-          <a href="./pages/Anurag.html" rel="noopener noreferrer"
-            class="decoration-none w-[50%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
-            style="
-                background-image: url('/assets/anurag.png');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-              ">
-          </a>
-          <!-- Name -->
-          <div class="text-xl font-bold text-green-800/80 mt-2" style="font-family: 'Geist', sans-serif">
-            Anurag Adhikari
-          </div>
-          <!-- Paragraph -->
-          <div class="text-sm p-4 text-justify" style="font-family: 'Giest', sans-serif">
-            "I was born on November 11th. 11:11—a lucky number that is all about manifestation and wishes. They say when you see 11:11, make a wish. Well, I was born in a moment full of wishes."
-          </div>
-          <!-- Socials -->
-          <div class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200">
-            <a href="https://www.linkedin.com/in/anuragadk/" target="_blank" rel="noopener noreferrer"
-              class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2">
-              <i class="fa-brands fa-linkedin-in text-xl"></i>
-            </a>
-          </div>
-        </div>
-        <!-- PrashunB Card -->
-        <div
-          class="w-[95%] lg:w-[30%] h-[62vh] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer">
-          <!-- Picture Display -->
-          <a href="./pages/Prashun.html" rel="noopener noreferrer"
-            class="decoration-none w-[50%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
-            style="
-                background-image: url('/assets/prashunB.png');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-              ">
-          </a>
-          <!-- Name -->
-          <div class="text-xl font-bold text-green-800/80 mt-2" style="font-family: 'Geist', sans-serif">
-            Prashun Baral
-          </div>
-          <!-- Paragraph -->
-          <div class="text-sm p-4 text-justify" style="font-family: 'Giest', sans-serif">
-            "I was born on January 1st, 2005—1/1—a date that marks fresh
-            starts and new beginnings. My birthday isn’t just the first day of
-            the year, it’s a reminder that I was born to start things off
-            right!"
-          </div>
-          <!-- Socials -->
-          <div class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200">
-            <a href="https://www.linkedin.com/in/prashunbaral/" target="_blank" rel="noopener noreferrer"
-              class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2">
-              <i class="fa-brands fa-linkedin-in text-xl"></i>
-            </a>
-          </div>
-        </div>
-        <!-- PrashunP Card -->
-        <div
-          class="w-[95%] h-[62vh] lg:w-[30%] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer">
-          <!-- Picture Display -->
-          <a href="./pages/Prasun.html" rel="noopener noreferrer"
-            class="w-[50%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
-            style="
-                background-image: url('/assets/prashunP.png');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-              "></a>
-          <!-- Name -->
-          <div class="text-xl font-bold text-green-800/80 mt-2" style="font-family: 'Geist', sans-serif">
-            Prasun Paudel
-          </div>
-          <!-- Paragraph -->
-          <div class="text-sm p-4 text-justify" style="font-family: 'Giest', sans-serif">
-            "I was born on May 30th—5/30—right on the edge of spring and
-            summer. It’s a day that celebrates creativity and fresh
-            ideas—fitting for someone always chasing what’s next!"
-          </div>
-          <!-- Socials -->
-          <div class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200">
+            class="w-[90%] lg:w-[85%] h-[48vh] bg-transparent mb-[1rem] flex flex-row flex-wrap justify-evenly items-start mb-2 border-1 border-gray-200 shadow-sm rounded-sm"
+          >
+            <!-- Photos of team members -->
+            <!-- Anurag -->
             <div
-              class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
-              onclick="window.open('https://www.linkedin.com/in/devilgod921/','_blank')">
-              <i class="fa-brands fa-linkedin-in text-xl"></i>
-            </div>
+              class="w-[33%] h-[24vh] mb-2 grayscale opacity-95 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
+              title="Anurag Adhikari"
+              style="
+                background-image: url('/assets/anurag.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            ></div>
+            <!-- PrasunB -->
+            <div
+              class="w-[33%] h-[24vh] grayscale opacity-95 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
+              title="Prashun Baral"
+              style="
+                background-image: url('/assets/prashunB.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            ></div>
+            <!-- PrasunP -->
+            <div
+              class="w-[33%] h-[24vh] grayscale opacity-98 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
+              title="Prasun Paudel"
+              style="
+                background-image: url('/assets/prashunP.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            ></div>
+            <!-- Samriddhi -->
+            <div
+              class="w-[33%] h-[24vh] grayscale opacity-98 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
+              title="Samriddhi Maharjan"
+              style="
+                background-image: url('/assets/samriddhi.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            ></div>
+            <!-- Shashi -->
+            <div
+              class="w-[33%] h-[24vh] grayscale opacity-98 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
+              title="Shashi Branuwal"
+              style="
+                background-image: url('/assets/shashi.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            ></div>
+            <!-- Shubham -->
+            <div
+              class="w-[33%] h-[24vh] grayscale opacity-98 bg-transparent hover:cursor-pointer hover:grayscale-[0%] hover:opacity-100 transition-all ease-in-out duration-500 rounded-md hover:bg-green-700/50 hover:scale-105"
+              title="Shubham Kadariya"
+              style="
+                background-image: url('/assets/shubham.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            ></div>
+          </div>
+          <!-- Tagline For The Collage -->
+          <div
+            class="font-bold text-[1.55rem] w-full text-center text-green-800 mt-[1.25rem]"
+            style="font-weight: 'Geist', sans-serif"
+          >
+            #FutureFrogs🐸
           </div>
         </div>
       </div>
-      <!-- Second Three Cards -->
-      <div class="w-[95%] lg:w-[75%] mt-2 mb-[2rem] flex flex-wrap justify-evenly items-start">
-        <!-- Samriddhi Card -->
+      <!-- The Tagline -->
+      <div
+        class="bg-neutral-400/20 flex flex-col justify-center items-center w-full h-[25vh] shadow-sm"
+      >
         <div
-          class="w-[95%] h-[62vh] lg:w-[30%] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer">
-          <!-- Picture Display -->
-          <a href="./pages/samridhi.html" rel="noopener noreferrer"
-            class="decoration-none w-[50%] h-[25vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
-            style="
+          class="mb-[1rem] font-bold text-4xl text-green-800"
+          style="font-family: 'Geist', sans-serif"
+        >
+          Meet Your Frogs
+        </div>
+        <div class="font-semibold text-lg text-center">
+          Team FutureFrogs where Leapfrog 2025 talents leap forward together.
+        </div>
+      </div>
+      <!-- The Basic Card To Display The Info-->
+      <div
+        class="w-full bg-transparent flex flex-col justify-start items-center"
+      >
+        <!-- First Three Cards -->
+        <div
+          class="w-[95%] lg:w-[75%] mt-4 mb-2 flex flex-col justify-start items-center lg:flex-row lg:flex-wrap lg:justify-evenly lg:items-start bg-transparent"
+        >
+          <!-- Anurag Card -->
+          <div
+            class="w-[95%] h-[64vh] lg:w-[30%] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+          >
+            <!-- Picture Display -->
+            <a
+              href="./pages/Anurag.html"
+              rel="noopener noreferrer"
+              class="decoration-none w-[51%] h-[27vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
+              style="
+                background-image: url('/assets/anurag.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+            >
+            </a>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Anurag Adhikari
+            </div>
+            <!-- Paragraph -->
+            <div
+              class="text-sm p-4 text-justify"
+              style="font-family: 'Giest', sans-serif"
+            >
+              "I was born on November 11th at 11:11—a moment believed to be
+              magical for making wishes, so you could say I entered the world in
+              a wishful, manifesting moment."
+            </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <a
+                href="https://www.linkedin.com/in/anuragadk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </a>
+            </div>
+          </div>
+          <!-- PrashunB Card -->
+          <div
+            class="w-[95%] lg:w-[30%] h-[62vh] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+          >
+            <!-- Picture Display -->
+            <a
+              href="./pages/Prashun.html"
+              rel="noopener noreferrer"
+              class="decoration-none w-[50%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
+              style="
+                background-image: url('/assets/prashunB.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+            >
+            </a>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Prashun Baral
+            </div>
+            <!-- Paragraph -->
+            <div
+              class="text-sm p-4 text-justify"
+              style="font-family: 'Giest', sans-serif"
+            >
+              "I was born on January 1st, 2005—1/1—a date that marks fresh
+              starts and new beginnings. My birthday isn’t just the first day of
+              the year, it’s a reminder that I was born to start things off
+              right!"
+            </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <a
+                href="https://www.linkedin.com/in/prashunbaral/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </a>
+            </div>
+          </div>
+          <!-- PrashunP Card -->
+          <div
+            class="w-[95%] h-[62vh] lg:w-[30%] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+          >
+            <!-- Picture Display -->
+            <a
+              href="./pages/Prasun.html"
+              rel="noopener noreferrer"
+              class="w-[50%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
+              style="
+                background-image: url('/assets/prashunP.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+            ></a>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Prasun Paudel
+            </div>
+            <!-- Paragraph -->
+            <div
+              class="text-sm p-4 text-justify"
+              style="font-family: 'Giest', sans-serif"
+            >
+              "I was born on May 30th—5/30—right on the edge of spring and
+              summer. It’s a day that celebrates creativity and fresh
+              ideas—fitting for someone always chasing what’s next!"
+            </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <div
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+                onclick="window.open('https://www.linkedin.com/in/devilgod921/','_blank')"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Three Cards -->
+        <div
+          class="w-[95%] lg:w-[75%] mt-2 mb-[2rem] flex flex-wrap justify-evenly items-start"
+        >
+          <!-- Samriddhi Card -->
+          <div
+            class="w-[95%] h-[62vh] lg:w-[30%] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+          >
+            <!-- Picture Display -->
+            <a
+              href="./pages/samridhi.html"
+              rel="noopener noreferrer"
+              class="decoration-none w-[50%] h-[25vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
+              style="
                 background-image: url('/assets/samriddhi.png');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-              ">
-          </a>
-          <!-- Name -->
-          <div class="text-xl font-bold text-green-800/80 mt-2" style="font-family: 'Geist', sans-serif">
-            Samridhi Maharjan
-          </div>
-          <!-- Paragraph -->
-          <div class="text-sm p-4 text-justify mb-5" style="font-family: 'Giest', sans-serif">
-            "I was born on January 30, 2004—a day that kickstarted my journey
-            in the heart of winter, full of new beginnings and endless
-            possibilities."
-          </div>
-          <!-- Socials -->
-          <div class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200">
-            <a href="https://www.linkedin.com/in/samridhi-maharjan-ab97bb228/" target="_blank" rel="noopener noreferrer"
-              class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2">
-              <i class="fa-brands fa-linkedin-in text-xl"></i>
+              "
+            >
             </a>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Samridhi Maharjan
+            </div>
+            <!-- Paragraph -->
+            <div
+              class="text-sm p-4 text-justify mb-5"
+              style="font-family: 'Giest', sans-serif"
+            >
+              "I was born on January 30, 2004—a day that kickstarted my journey
+              in the heart of winter, full of new beginnings and endless
+              possibilities."
+            </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <a
+                href="https://www.linkedin.com/in/samridhi-maharjan-ab97bb228/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- Shashi Card -->
-        <div
-          class="w-[95%] h-[62vh] lg:w-[30%] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer">
-          <!-- Picture Display -->
-          <a href="./pages/Shashi.html" rel="noopener noreferrer"
-            class="decoration-none w-[50%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
-            style="
+          <!-- Shashi Card -->
+          <div
+            class="w-[95%] h-[62vh] lg:w-[30%] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+          >
+            <!-- Picture Display -->
+            <a
+              href="./pages/Shashi.html"
+              rel="noopener noreferrer"
+              class="decoration-none w-[50%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
+              style="
                 background-image: url('/assets/shashi.png');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-              ">
-          </a>
-          <!-- Name -->
-          <div class="text-xl font-bold text-green-800/80 mt-2" style="font-family: 'Geist', sans-serif">
-            Shashi Baranwal
-          </div>
-          <!-- Paragraph -->
-          <div class="text-sm p-4 text-justify" style="font-family: 'Giest', sans-serif">
-            "I was born on November 28—Sagittarius zone—a zodiac that’s never
-            happy staying in one place—tech events, hackathons, community
-            meetups? Let's checks out."
-          </div>
-          <!-- Socials -->
-          <div class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200">
-            <a href="https://www.linkedin.com/in/shashi-baranwal/" target="_blank" rel="noopener noreferrer"
-              class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2">
-              <i class="fa-brands fa-linkedin-in text-xl"></i>
+              "
+            >
             </a>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Shashi Baranwal
+            </div>
+            <!-- Paragraph -->
+            <div
+              class="text-sm p-4 text-justify"
+              style="font-family: 'Giest', sans-serif"
+            >
+              "I was born on November 28—Sagittarius zone—a zodiac that’s never
+              happy staying in one place—tech events, hackathons, community
+              meetups? Let's checks out."
+            </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <a
+                href="https://www.linkedin.com/in/shashi-baranwal/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- Shubham Card -->
-        <div
-          class="w-[95%] h-[62vh] lg:w-[30%] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer">
-          <!-- Picture Display -->
-          <a href="./pages/Shubham.html" rel="noopener noreferrer"
-            class="decoration-none w-[50%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
-            style="
+          <!-- Shubham Card -->
+          <div
+            class="w-[95%] h-[62vh] lg:w-[30%] lg:h-[60vh] mb-2 bg-transparent mt-[2rem] rounded-sm shadow-sm flex flex-col justify-start items-center border-1 border-gray-200 hover:cursor-pointer"
+          >
+            <!-- Picture Display -->
+            <a
+              href="./pages/Shubham.html"
+              rel="noopener noreferrer"
+              class="decoration-none w-[50%] h-[38vh] bg-transparent mt-4 rounded-[50%] grayscale hover:cursor-pointer hover:grayscale-[0%] hover:bg-green-700/50 transition-all ease-in-out duration-500 hover:scale-105 mb-2"
+              style="
                 background-image: url('/assets/shubham.png');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-              ">
-          </a>
-          <!-- Name -->
-          <div class="text-xl font-bold text-green-800/80 mt-2" style="font-family: 'Geist', sans-serif">
-            Shubham Kadariya
-          </div>
-          <!-- Paragraph -->
-          <div class="text-sm p-4 text-justify" style="font-family: 'Giest', sans-serif">
-            "I was also born on July 7th—7/7—giving me a connection to lucky
-            number 7 and World Chocolate Day! My birthday is literally the
-            sweetest day of the year."
-          </div>
-          <!-- Socials -->
-          <div class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200">
-            <a href="https://www.linkedin.com/in/shubhamkadariya/" target="_blank" rel="noopener noreferrer"
-              class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2">
-              <i class="fa-brands fa-linkedin-in text-xl"></i>
+              "
+            >
             </a>
+            <!-- Name -->
+            <div
+              class="text-xl font-bold text-green-800/80 mt-2"
+              style="font-family: 'Geist', sans-serif"
+            >
+              Shubham Kadariya
+            </div>
+            <!-- Paragraph -->
+            <div
+              class="text-sm p-4 text-justify"
+              style="font-family: 'Giest', sans-serif"
+            >
+              "I was also born on July 7th—7/7—giving me a connection to lucky
+              number 7 and World Chocolate Day! My birthday is literally the
+              sweetest day of the year."
+            </div>
+            <!-- Socials -->
+            <div
+              class="flex justify-center items-center p-2 w-full border-t-1 border-gray-200"
+            >
+              <a
+                href="https://www.linkedin.com/in/shubhamkadariya/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-[18%] h-[8vh] bg-transparent rounded-[50%] flex justify-center items-center transition-all ease-in-out duration-500 hover:cursor-pointer hover:scale-105 hover:bg-green-800/80 hover:text-white mr-2"
+              >
+                <i class="fa-brands fa-linkedin-in text-xl"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <!-- The Footer Section -->
-  <footer>
-    <div
-      class="w-full h-[18vh] bg-[#222b29] shadow-sm flex flex-col justify-start items-center lg:flex-row lg:px-[22vh] lg:justify-between lg:items-center">
-      <div class="text-sm lg:text-m text-[#a6b2af] leading-none mt-4 text-center mb-4 lg:mb-0 lg:mt-0 lg:text-start"
-        style="font-family: 'Geist', sans-serif">
-        © LSPP 2025 Team Future Frogs. All rights reserved.
-      </div>
-      <div class="w-[16vh] lg:w-[18vh] h-[6vh] mt-2 lg:mt-0" style="
+    </main>
+    <!-- The Footer Section -->
+    <footer>
+      <div
+        class="w-full h-[18vh] bg-[#222b29] shadow-sm flex flex-col justify-start items-center lg:flex-row lg:px-[22vh] lg:justify-between lg:items-center"
+      >
+        <div
+          class="text-sm lg:text-m text-[#a6b2af] leading-none mt-4 text-center mb-4 lg:mb-0 lg:mt-0 lg:text-start"
+          style="font-family: 'Geist', sans-serif"
+        >
+          © LSPP 2025 Team Future Frogs. All rights reserved.
+        </div>
+        <div
+          class="w-[16vh] lg:w-[18vh] h-[6vh] mt-2 lg:mt-0"
+          style="
             background-image: url('assets/wordmark-white.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-          "></div>
-    </div>
-  </footer>
-</body>
-
+          "
+        ></div>
+      </div>
+    </footer>
+  </body>
 </html>
