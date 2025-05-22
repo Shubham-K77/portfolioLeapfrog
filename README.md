@@ -26,23 +26,35 @@ This webpage serves as an introductory page for the team **Future Frogs**. It is
 
 ---
 
-## 🖥️ Preview
+## 🖥️ Walkthrough
 
-Screenshot here
+**Hero/Landing Page:**
+![index](assets/walkthrough-01.png)
+![index](assets/walkthrough-02.png)
+![index](assets/walkthrough-03.png)
+
+**Each Teammate Description Page:**
+![portfolio](assets/walkthrough-04.png)
+![portfolio](assets/walkthrough-05.png)
 
 ---
 
 ## 📂 Folder Structure
 
-`structure here`
+<pre>📁 FUTUREFROGS  
+├── 📁 assets    
+├── 📁 pages
+├── index.html  
+└── README.md  
+</pre>
 
 ---
 
 ## 🧑‍💻 Contributors
 
-- Anurag Adhikari
-- Prashun Baral
-- Prasun Paudel
-- Samridhi Maharjan
-- Shashi Baranwal
-- Shubham Kadariya
+- [Anurag Adhikari](https://github.com/anurag-adk)
+- [Prashun Baral](https://github.com/prashunbaral)
+- [Prasun Paudel](https://github.com/DevilGod129)
+- [Samridhi Maharjan](https://github.com/samridhi-maharjan)
+- [Shashi Baranwal](https://github.com/shashibaranwal)
+- [Shubham Kadariya](https://github.com/Shubham-K77)
