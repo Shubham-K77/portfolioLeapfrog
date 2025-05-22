@@ -58,3 +58,7 @@ This webpage serves as an introductory page for the team **Future Frogs**. It is
 - [Samridhi Maharjan](https://github.com/samridhi-maharjan)
 - [Shashi Baranwal](https://github.com/shashibaranwal)
 - [Shubham Kadariya](https://github.com/Shubham-K77)
+
+## 🙏 Thank You
+
+_A Special Thank You To Our Mentors and Facilitators at Leapfrog especially Avishek Tiwari Dai_
