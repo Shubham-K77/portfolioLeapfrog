@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIcon -->
+    <link rel="icon" href="/assets/favicon.png" />
+    <title>Prashun's Portfolio</title>
+    <!-- Using Tailwind CSS Playful CDN For Styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Using The Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Google Fonts For Geist Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen overflow-x-hidden overflow-y-auto w-full">
+    <!-- NavBar -->
+    <nav class="sticky top-0 z-[50] bg-transparent backdrop-blur-md w-full">
+      <div
+        class="w-full h-auto lg:h-[12vh] shadow-sm bg-transparent flex flex-row justify-between items-center px-4 lg:px-[22vh] mb-[1rem] py-4"
+      >
+        <!-- Team Logo -->
+        <div
+          class="w-[35%] h-[6vh] sm:w-[30%] sm:h-[7vh] md:w-[26%] md:h-[8vh] lg:w-[28vh] lg:h-[8vh] bg-transparent hover:cursor-pointer"
+          style="
+            background-image: url('/assets/logo.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          "
+          onclick="window.location.href='/index.html'"
+        ></div>
+        <!-- Lsp Logo -->
+        <div
+          class="w-[35%] h-[6vh] sm:w-[30%] sm:h-[7vh] md:w-[26%] md:h-[8vh] lg:w-[28vh] lg:h-[8vh] bg-transparent hover:cursor-pointer"
+          style="
+            background-image: url('/assets/lspLogo.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          "
+          onclick="window.location.href='https://studentpartner.lftechnology.com'"
+        ></div>
+      </div>
+    </nav>
+    <!-- Hero Banner -->
+    <div
+      class="w-full bg-transparent flex flex-col justify-start items-center px-2 lg:px-[22vh]"
+    >
+      <!-- Navigation Back -->
+      <div
+        class="w-full flex justify-center lg:justify-start items-center lg:px-10"
+      >
+        <a
+          href="/"
+          class="noopener noreferrer w-[95%] lg:w-[16%] flex justify-start items-center p-4 transition-all ease-in-out duration-150 mb-2 rounded-sm bg-green-800 p-2 transition-all ease-in-out duration-150 hover:bg-green-600 hover:scale-105"
+        >
+          <div
+            class="text-m text-gray-800 font-semibold mr-4 text-white"
+            style="font-family: 'Geist', sans-serif"
+          >
+            <-
+          </div>
+          <div
+            class="text-m text-gray-800 font-semibold mr-2 hover:underline text-white"
+            style="font-family: 'Geist', sans-serif"
+          >
+            Back to Team
+          </div>
+        </a>
+      </div>
+      <!-- Profile Pic And Description -->
+      <div
+        class="flex flex-col justify-start items-center lg:flex-row lg:justify-start lg:items-center lg:w-full"
+      >
+        <!-- Profile Pic -->
+        <div
+          class="w-[90%] lg:w-[25%] h-[50vh] bg-transparent rounded-sm mt-2 lg:mb-4 lg:ml-4 grayscale hover:cursor-pointer hover:grayscale-0"
+          style="
+            background-image: url('/assets/prashunB.png');
+            background-size: cover;
+            background-repeat: 'no-repeat';
+            background-position: center;
+          "
+        ></div>
+        <!-- Name, Tags and Passion -->
+        <div
+          class="w-full lg:w-[75%] flex flex-col justify-start items-center mt-2"
+        >
+          <!-- Title Name -->
+          <div
+            class="text-center mb-2 text-3xl font-bold mt-4"
+            style="font-family: 'Geist', sans-serif"
+          >
+            Prashun Baral
+          </div>
+          <!-- Tag And Location -->
+          <div class="w-[95%] flex justify-center items-center">
+            <!-- Tag -->
+            <div
+              class="w-[55%] lg:w-[35%] h-[6vh] rounded-md border-1 border-green-700 bg-transparent flex justify-center items-center mr-2"
+            >
+              <div
+                class="text-sm text-green-400 font-bold"
+                style="font-family: 'Geist', sans-serif"
+              >
+                Leapfrog Student Partner
+              </div>
+            </div>
+            <!-- Location -->
+            <div
+              class="w-[35%] h-[6vh] rounded-md border-1 border-green-700 bg-transparent flex justify-center items-center mr-2"
+            >
+              <div
+                class="text-sm text-gray-700 font-bold"
+                style="font-family: 'Geist', sans-serif"
+              >
+                BKT, Nepal
+              </div>
+            </div>
+          </div>
+          <!-- Passion Text -->
+          <div
+            class="mb-2 text-justify text-sm lg:text-m w-[95%] lg:w-[80%] p-2 mt-4"
+            style="font-family: 'Geist', sans-serif"
+          >
+            I'm a passionate cybersecurity enthusiast with a keen interest in
+            offensive security. I enjoy learning about the latest trends and
+            techniques in the field, and I'm always eager to expand my knowledge
+            and skills. I'm currently learning web 3 and blockchain
+            vulnerabilities. I love to explore vulnerabilities and exploit them.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Me And Fun Facts -->
+    <div
+      class="w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around lg:items-center mt-4 mb-4 px-4 lg:px-[22vh]"
+    >
+      <!-- About Me Card -->
+      <div
+        class="w-[95%] lg:h-[47vh] lg:w-[70%] border-2 border-gray-200 rounded-md flex flex-col justify-start lg:justify-center items-center mb-4 lg:p-4"
+      >
+        <!-- Title -->
+        <div
+          class="mt-2 font-bold text-xl text-start p-2 w-full"
+          style="font-family: 'Geist', sans-serif"
+        >
+          💜 About Me
+        </div>
+        <!-- Desc -->
+        <div
+          class="p-2 text-sm lg:text-m text-gray-800 p-2 text-justify w-[95%] mb-2 lg:mb-4"
+          style="font-family: 'Geist', sans-serif"
+        >
+          I'm Prashun Baral, a CS student at Herald College Kathmandu and a
+          cybersecurity researcher at Threatnix. I'm also a part-time Backend
+          Developer and freelancer. I'm passionate about exploiting
+          vulnerabilities found in systems and applications. I love to find
+          loopholes in systems and applications and report them to the
+          respective companies.
+        </div>
+        <!-- Recent Projects -->
+        <div class="w-[95%] flex flex-col justify-start items-start mb-4">
+          <!-- Title -->
+          <div
+            class="text-xl font-bold mb-2"
+            style="font-family: 'Geist', sans-serif"
+          >
+            💼 Recent Projects
+          </div>
+          <!-- Project-1 -->
+          <div
+            class="text-sm font-semibold mb-2 ml-2"
+            style="font-family: 'Geist', sans-serif"
+          >
+            ⭐ Penetration Testing of Metasploitable 3
+          </div>
+          <!-- Project-2 -->
+          <div
+            class="text-sm font-semibold mb-2 ml-2"
+            style="font-family: 'Geist', sans-serif"
+          >
+            ⭐ VoIP Network Development and Assessment
+          </div>
+          <!-- Project-3 -->
+          <div
+            class="text-sm font-semibold mb-2 ml-2"
+            style="font-family: 'Geist', sans-serif"
+          >
+            ⭐ Stored XSS vulnerability in an undisclosed domain
+          </div>
+        </div>
+      </div>
+      <!-- Fun Fact Card -->
+      <div
+        class="w-[95%] lg:w-[25%] border-2 border-gray-200 mb-2 rounded-sm flex flex-col justify-start items-center"
+      >
+        <!-- Title -->
+        <div
+          class="mt-2 font-bold text-xl text-start p-2 w-full"
+          style="font-family: 'Geist', sans-serif"
+        >
+          💡 Fun Facts
+        </div>
+        <!-- Fun-Fact-1 -->
+        <div
+          class="w-[95%] lg:w-[85%] h-[10vh] p-1 flex justify-center items-center bg-green-300/20 mt-2 rounded-sm"
+        >
+          <div class="text-sm font-semibold text-justify w-[95%]">
+            😵 I'm learning how re-entrancy attacks work in smart contracts and
+            how to exploit them.
+          </div>
+        </div>
+        <!-- Fun-Fact-2 -->
+        <div
+          class="w-[95%] lg:w-[85%] h-[10vh] p-1 flex justify-center items-center bg-blue-200/20 mt-4 rounded-sm"
+        >
+          <div class="text-sm font-semibold text-justify w-[95%]">
+            🤫 Discovered 7 bugs, but all were out of scope or duplicates.
+          </div>
+        </div>
+        <!-- Fun-Fact-3 -->
+        <div
+          class="w-[95%] lg:w-[85%] h-[10vh] p-1 flex justify-center items-center bg-yellow-200/20 mt-4 mb-4 rounded-sm"
+        >
+          <div class="text-sm font-semibold text-justify w-[95%]">
+            🤔 I write Medium blogs on cybersecurity topics like SameSite and
+            auth bypass.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Key Learnings And Tech Interest -->
+    <div
+      class="w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around lg:items-center mt-4 mb-4 px-4 lg:px-[22vh]"
+    >
+      <!-- Key Learnings Card -->
+      <div
+        class="w-[95%] lg:w-[70%] lg:h-[40vh] mb-4 border-2 border-gray-200 flex flex-col justify-start lg:justify-center items-start rounded-sm"
+      >
+        <!-- Title -->
+        <div
+          class="mt-2 font-bold text-xl text-start p-2 w-full lg:ml-4"
+          style="font-family: 'Geist', sans-serif"
+        >
+          🎓 Key Learnings
+        </div>
+        <!-- Key Learning-1 -->
+        <div
+          class="mt-2 mb-2 text-sm w-[95%] p-2 text-justify ml-2 lg:ml-6"
+          style="font-family: 'Geist', sans-serif"
+        >
+          1️⃣ Learned how to break a website's working mechanisms, find loopholes
+          and exploit them.
+        </div>
+        <!-- Key Learning-2 -->
+        <div
+          class="mt-2 mb-2 text-sm w-[95%] p-2 text-justify ml-2 lg:ml-6"
+          style="font-family: 'Geist', sans-serif"
+        >
+          2️⃣ Understood the value of consistent learning and staying updated
+          with the latest trends in the field of cybersecurity.
+        </div>
+        <!-- Key Learning-3 -->
+        <div
+          class="mt-2 mb-2 text-sm w-[95%] p-2 text-justify ml-2 lg:ml-6"
+          style="font-family: 'Geist', sans-serif"
+        >
+          3️⃣ Discovered how cybersecurity is a constantly evolving field, and
+          the importance of adapting to new challenges.
+        </div>
+      </div>
+      <!-- Tech Interest -->
+      <div
+        class="w-[95%] lg:w-[25%] mb-4 border-2 border-gray-200 flex flex-col justify-start items-start lg:items-center"
+      >
+        <!-- Title -->
+        <div
+          class="mt-2 font-bold text-xl text-start p-2 w-full"
+          style="font-family: 'Geist', sans-serif"
+        >
+          🧠 Tech Interest
+        </div>
+        <!-- Interest-1 -->
+        <div
+          class="mt-2 mb-2 text-sm w-[95%] lg:w-[85%] p-2 text-center ml-2 border-1 border-gray-200 rounded-2xl text-green-600"
+          style="font-family: 'Geist', sans-serif"
+        >
+          Vulnerability Assessment
+        </div>
+        <!-- Interest-2 -->
+        <div
+          class="mt-2 mb-2 text-sm w-[95%] lg:w-[85%] p-2 text-center ml-2 border-1 border-gray-200 rounded-2xl text-blue-600"
+          style="font-family: 'Geist', sans-serif"
+        >
+          Penetration Testing
+        </div>
+        <!-- Interest-3 -->
+        <div
+          class="mt-2 mb-4 text-sm w-[95%] lg:w-[85%] p-2 text-center ml-2 border-1 border-gray-200 rounded-2xl text-amber-600"
+          style="font-family: 'Geist', sans-serif"
+        >
+          Red Teaming
+        </div>
+      </div>
+    </div>
+    <!-- The Footer Section -->
+    <footer>
+      <div
+        class="w-full h-[18vh] bg-[#222b29] shadow-sm flex flex-col justify-start items-center lg:flex-row lg:px-[22vh] lg:justify-between lg:items-center"
+      >
+        <!-- CopyRight Text -->
+        <div
+          class="text-sm lg:text-m text-[#a6b2af] leading-none mt-4 text-center mb-4 lg:mb-0 lg:mt-0 lg:text-start"
+          style="font-family: 'Geist', sans-serif"
+        >
+          © LSPP 2025 Team Future Frogs. All rights reserved.
+        </div>
+        <!-- Footer Logo -->
+        <div
+          class="w-[16vh] lg:w-[18vh] h-[6vh] mt-2 lg:mt-0"
+          style="
+            background-image: url('/assets/wordmark-white.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          "
+        ></div>
+      </div>
+    </footer>
+  </body>
+</html>
